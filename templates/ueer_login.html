@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+</head>
+<body>
+<form action="{% url 'jiale:user_login' %}" method="post">
+    {% csrf_token %}
+    <span>用户名:</span><input type="text" name="username" placeholder="清楚收入用户名">
+    <hr>
+    <input type="submit">
+</form>
+
+</body>
+</html>
